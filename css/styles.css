@@ -382,6 +382,16 @@ input {
   background-size: cover;
 }
 
+@media screen and (min-width: 320px) and (min-resolution: 192dpi) {
+  .first-section {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/solutions/hero-mobile-background@2x.jpg);
+  }
+}
+
 .title {
   text-align: center;
   font-weight: 700;
@@ -442,6 +452,16 @@ input {
   }
 }
 
+@media screen and (min-width: 768px) and (min-resolution: 192dpi) {
+  .first-section {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/solutions/hero-tab-background@2x.jpg);
+  }
+}
+
 @media screen and (min-width: 1158px) {
   .first-section {
     padding-top: 188px;
@@ -451,9 +471,19 @@ input {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/solutions/hero-background.jpg);
+      url(../images/solutions/hero-desk-background.jpg);
 
     max-width: 1440px;
+  }
+
+  @media screen and (min-width: 1440px) and (min-resolution: 192dpi) {
+    .first-section {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/solutions/hero-desk-background@2x.jpg);
+    }
   }
 
   .title {
@@ -789,9 +819,8 @@ input {
 
 /* #region Our Team */
 .our-team {
-  /* height: 732px; */
   background: #f4f4fd;
-  padding: 96px 12px;
+  padding: 96px 0;
 }
 
 .our-team-title {
